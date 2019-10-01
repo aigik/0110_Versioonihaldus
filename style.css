@@ -38,6 +38,7 @@ section,
 
 
 .container{
+    display:flex;
 	max-width: 1440px;
 	width: 100%;
 	position: relative;
@@ -144,6 +145,8 @@ p{
 }
 .col--33{
 	width: 33.33%;
+}
+    
 }
 .col--40{
 	width: 40%;
@@ -288,13 +291,27 @@ main{
 .card{
 	padding: 20px;
 	font-size: 14px;
+    box-shadow:0;
+    transition:box-shadow 1s;
+    
+
 }
+
+.card:hover{
+    cursor:pointer;
+    box-shadow:0 0 20px #515151;
+    transition:all .6s ease-in-out;
+    transform:scale(1.01);
+}
+
 .card__title{
 	font-size: 22px;
 	font-weight: 600;
 	padding:10px 0 30px;
 	text-transform: capitalize;
 }
+
+
 .card__subtitle{
 	align-items: baseline;
 	display: flex;
@@ -314,9 +331,7 @@ main{
 	border-radius: 6px;
 	overflow: hidden;
 	margin-bottom: 20px;
-}
-
-
+ }
 
 /*thumbnail*/
 
